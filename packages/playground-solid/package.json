@@ -1,0 +1,35 @@
+{
+  "name": "playground-solid",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "prebuild": "yarn workspace @headlessui/solid build && yarn workspace @headlessui/tailwindcss build",
+    "predev": "yarn workspace @headlessui/solid build && yarn workspace @headlessui/tailwindcss build",
+    "dev:tailwindcss": "yarn workspace @headlessui/tailwindcss watch",
+    "dev:headlessui": "yarn workspace @headlessui/solid watch",
+    "dev:next": "solid-start dev",
+    "dev": "npm-run-all -p dev:*",
+    "build": "NODE_ENV=production solid-start build",
+    "clean": "rimraf ./dist"
+  },
+  "type": "module",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "solid-start-node": "^0.2.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "vite": "^3.2.5"
+  },
+  "dependencies": {
+    "@headlessui/solid": "*",
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.7.0",
+    "solid-js": "^1.6.9",
+    "solid-start": "^0.2.19",
+    "undici": "^5.15.1"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
