@@ -9,9 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Ensure we handle `null` dataRef values correctly ([#2258](https://github.com/tailwindlabs/headlessui/pull/2258))
+
+## [1.7.10] - 2023-02-06
+
+### Fixed
+
+- Revert "Use the `import * as React from 'react'` pattern ([#2242](https://github.com/tailwindlabs/headlessui/pull/2242))
+
+## [1.7.9] - 2023-02-03
+
+### Fixed
+
 - Fix SSR tab hydration when using Strict Mode in development ([#2231](https://github.com/tailwindlabs/headlessui/pull/2231))
 - Don't break overflow when multiple dialogs are open at the same time ([#2215](https://github.com/tailwindlabs/headlessui/pull/2215))
 - Fix "This `Suspense` boundary received an update before it finished hydrating" error in the `Disclosure` component ([#2238](https://github.com/tailwindlabs/headlessui/pull/2238))
+- Use the `import * as React from 'react'` pattern ([#2242](https://github.com/tailwindlabs/headlessui/pull/2242))
 
 ## [1.7.8] - 2023-01-27
 
@@ -431,7 +444,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Everything!
 
-[unreleased]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.8...HEAD
+[unreleased]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.10...HEAD
+[1.7.10]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.9...@headlessui/react@v1.7.10
+[1.7.9]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.8...@headlessui/react@v1.7.9
 [1.7.8]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.7...@headlessui/react@v1.7.8
 [1.7.7]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.6...@headlessui/react@v1.7.7
 [1.7.6]: https://github.com/tailwindlabs/headlessui/compare/@headlessui/react@v1.7.5...@headlessui/react@v1.7.6
